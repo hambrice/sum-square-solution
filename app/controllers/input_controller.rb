@@ -6,10 +6,8 @@ class InputController < ApplicationController
     if input
       input.update(occurrences: input.occurrences += 1, last_datetime: input.datetime, datetime: Time.new)
     else
-      numbers = (1..n)
-      solution = numbers.reduce(:+)**2 - numbers.map {|num| num ** 2}.reduce(:+)
-      input = Input.create(number: n, value: solution, datetime: Time.new)
+      input = Input.create(number: n, value: view_context.solution(n), datetime: Time.new)
     end
-    render json: input
+    render json: input, except: [:id]
   end
 end

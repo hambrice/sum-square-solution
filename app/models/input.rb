@@ -1,2 +1,3 @@
 class Input < ApplicationRecord
+
 end
