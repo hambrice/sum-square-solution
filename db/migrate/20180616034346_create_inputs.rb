@@ -6,8 +6,6 @@ class CreateInputs < ActiveRecord::Migration[5.1]
       t.integer :number
       t.integer :occurrences
       t.datetime :last_datetime
-
-      t.timestamps
     end
   end
 end
