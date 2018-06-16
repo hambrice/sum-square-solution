@@ -4,7 +4,7 @@ class CreateInputs < ActiveRecord::Migration[5.1]
       t.datetime :datetime
       t.integer :value
       t.integer :number
-      t.integer :occurrences
+      t.integer :occurrences, default: 1
       t.datetime :last_datetime
     end
   end

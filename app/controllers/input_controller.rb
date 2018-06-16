@@ -2,9 +2,14 @@
 class InputController < ApplicationController
   def index
     n = params["number"].to_i
-    numbers = (1..n)
-    sum_of_squares = numbers.map {|num| num ** 2}.reduce(:+)
-    square_of_sums = numbers.reduce(:+)**2
-    render json: square_of_sums - sum_of_squares
+    input = Input.find_by(number: n)
+    if input
+      input.update(occurrences: input.occurrences += 1, last_datetime: input.datetime, datetime: Time.new)
+    else
+      numbers = (1..n)
+      solution = numbers.reduce(:+)**2 - numbers.map {|num| num ** 2}.reduce(:+)
+      input = Input.create(number: n, value: solution, datetime: Time.new)
+    end
+    render json: input
   end
 end

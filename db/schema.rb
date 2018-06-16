@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180616034346) do
+ActiveRecord::Schema.define(version: 20180616050535) do
 
   create_table "inputs", force: :cascade do |t|
     t.datetime "datetime"
     t.integer "value"
     t.integer "number"
-    t.integer "occurrences"
+    t.integer "occurrences", default: 1
     t.datetime "last_datetime"
   end
 
