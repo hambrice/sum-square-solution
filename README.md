@@ -1,24 +1,33 @@
-# README
+# Sum-Square-Solution
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+### Getting Started
 
-* Ruby version
+    $ git clone git@github.com:hambrice/trivia-pro.git
 
-* System dependencies
+## Prerequisites
+Run the following code in your terminal to ensure you have the proper version of Ruby.
 
-* Configuration
+    $ rvm install ruby-2.5.0
 
-* Database creation
+## Installation
+Run the following code in your terminal to clone the repo to your machine.
 
-* Database initialization
+    $ git clone git@github.com:hambrice/sum-square-solution.git
+    $ cd square-sum-solution
+    $ bundle install
+    $ rake db:migrate
+    $ cd client
+    $ npm install
+    $ rake start
 
-* How to run the test suite
+## Usage
+In the browser window that opens, enter any number in the form and click submit.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Contributing
 
-* Deployment instructions
+Bug reports and pull requests are welcome on GitHub at https://github.com/hambrice/sum-square-solution. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
-* ...
+## License
+
+The application is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
