@@ -3,19 +3,23 @@ import React from 'react';
 const Display = (props) =>
   <div>
     <table>
-      <tr>
-        <th>Current Time</th>
-        <th>Input</th>
-        <th>Result</th>
-        <th>Occurrences</th>
-        <th>Time of Last Occurrence</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>Current Time</th>
+          <th>Input</th>
+          <th>Result</th>
+          <th>Occurrences</th>
+          <th>Time of Last Occurrence</th>
+        </tr>
+      </thead>
       <tbody>
-        <th>{props.datetime}</th>
-        <th>{props.number}</th>
-        <th>{props.value}</th>
-        <th>{props.occurrences}</th>
-        <th>{props.last_datetime}</th>
+        <tr>
+          <th>{props.datetime}</th>
+          <th>{props.number}</th>
+          <th>{props.value}</th>
+          <th>{props.occurrences}</th>
+          <th>{props.lastDatetime}</th>
+        </tr>
       </tbody>
     </table>
   </div>
