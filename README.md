@@ -1,5 +1,5 @@
 # Sum-Square-Solution
-
+This React application uses a Rails API backend to solve for the difference between the sum of the squares of a given n natural number and the square of the sum of the same n natural number.
 
 ### Getting Started
 
@@ -22,7 +22,7 @@ Run the following code in your terminal to clone the repo to your machine.
     $ rake start
 
 ## Usage
-In the browser window that opens, enter any whole number in the form and click submit.
+In the browser window that opens, enter any whole number greater than 0 in the form and click submit.
 
 ## Contributing
 
