@@ -22,7 +22,7 @@ Run the following code in your terminal to clone the repo to your machine.
     $ rake start
 
 ## Usage
-In the browser window that opens, enter any number in the form and click submit.
+In the browser window that opens, enter any whole number in the form and click submit.
 
 ## Contributing
 
