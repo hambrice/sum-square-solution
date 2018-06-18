@@ -10,6 +10,8 @@ const Display = (props) =>
         <th>Occurrences</th>
         <th>Time of Last Occurrence</th>
       </tr>
+      <tbody>
+      </tbody>
     </table>
   </div>
 
