@@ -6,6 +6,17 @@ import InputForm from './components/InputForm';
 import Display from './components/Display';
 
 class App extends Component {
+  constructor() {
+    super(props);
+
+    this.state = {
+      number: null,
+      value: null,
+      datetime: null,
+      last_datetime: null,
+      occurrences: null
+    }
+  }
 
   handleSubmitClick = event => {
     event.preventDefault();
@@ -19,7 +30,7 @@ class App extends Component {
     return (
       <div className="App">
         <InputForm handleSubmitClick={ this.handleSubmitClick } />
-        <Display />
+        <Display currentValues={ this.state }/>
       </div>
     );
   }

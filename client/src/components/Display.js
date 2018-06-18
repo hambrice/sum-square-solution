@@ -11,6 +11,11 @@ const Display = (props) =>
         <th>Time of Last Occurrence</th>
       </tr>
       <tbody>
+        <th>{props.datetime}</th>
+        <th>{props.number}</th>
+        <th>{props.value}</th>
+        <th>{props.occurrences}</th>
+        <th>{props.last_datetime}</th>
       </tbody>
     </table>
   </div>
