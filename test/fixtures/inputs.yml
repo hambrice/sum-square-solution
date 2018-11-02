@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  datetime: 2018-11-02 13:35:54
+  value:
+  number:
+  occurrences:
+  last_datetime:
+
+two:
+  datetime: 2018-11-02 13:35:54
+  value:
+  number:
+  occurrences:
+  last_datetime:

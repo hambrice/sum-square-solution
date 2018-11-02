@@ -1,16 +1,14 @@
 # Sum-Square-Solution
 This React application uses a Rails API backend to solve for the difference between the sum of the squares of a given n natural number and the square of the sum of the same n natural number.
 
-### Getting Started
+## Getting Started
 
-    $ git clone git@github.com:hambrice/trivia-pro.git
-
-## Prerequisites
+### Prerequisites
 Run the following code in your terminal to ensure you have the proper version of Ruby.
 
     $ rvm install ruby-2.5.0
 
-## Installation
+### Installation
 Run the following code in your terminal to clone the repo to your machine.
 
     $ git clone git@github.com:hambrice/sum-square-solution.git
@@ -21,7 +19,7 @@ Run the following code in your terminal to clone the repo to your machine.
     $ npm install
     $ rake start
 
-## Usage
+### Usage
 In the browser window that opens, enter any whole number greater than 0 in the form and click submit.
 
 ## Contributing
